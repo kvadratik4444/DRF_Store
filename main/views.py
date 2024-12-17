@@ -8,7 +8,7 @@ class IndexAPIView(APIView):
         'content': 'Магазин мебели HOME',
     }
 
-    def get(self, request, *args, **kwargs):
+    def get(self, request):
         return Response(self.data)
 
 
@@ -19,5 +19,5 @@ class AboutAPIView(APIView):
         'text_on_page': 'Текст о том почему этот магазин такой классный, и какой хороший товар.',
     }
 
-    def get(self, request, *args, **kwargs):
+    def get(self, request):
         return Response(self.data)
